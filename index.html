@@ -12,6 +12,7 @@
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -32,6 +33,9 @@
                 </li>
                 <li class="item">
                     <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#internships">Internships</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#projects">Projects</a>
@@ -55,13 +59,14 @@
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Anjana Shreya</span>
+            <h1 class="header-title" style="text-align: start;">
+                <span class="up animate__animated animate__bounceInRight animate__fadeInRight">HI!</span>
+                <span class="down animate__animated animate__bounceInRight animate__fadeInRight delay01">I am Anjana Shreya</span>
             </h1>
-            <p class="header-subtitle">FULLSTACAK WEB DESIGNER</p>
+            <p class="header-subtitle animate__animated animate__bounceInRight animate__fadeInRight delay015">FULLSTACAK WEB DESIGNER</p>
             
-            <button class="btn btn-primary"><a href="#portfolio" style="color: white;">Visit My Works</a></button>
+            <button class="btn btn-primary animate__animated animate__bounceInRight animate__fadeInRight delay03"><a href="#portfolio" style="color: white;">Visit My Works</a></button>
+            <button class="btn btn-primary animate__animated animate__bounceInRight animate__fadeInRight delay03"><a href="#contact" style="color: white;">Contact Me</a></button>
             <!-- <button class="btn btn-primary">Visit My Works</button> -->
         </div>
     </header><!-- end of page header -->
@@ -99,49 +104,6 @@
     </section> <!-- end of about section -->
 
 
-    <section class="section" id="internships" style="padding: 0;">
-        <div class="text-center">
-            <p class="section-subtitle">My Experience ..!!</p>
-            <h6 class="section-title mb-6">Internships</h6>
-            <div class="container1">
-                <ul class="timelines">
-                    <li style="--accent-color:#41516C">
-                        <div class="date">EDGEFORCE SOLUTION</div>
-                        <div class="title">Frontend Intern
-                            <div style="padding-top: 0; font-size: 14px;">26 June 2024 - Present</div>
-                        </div>
-                        <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
-                    </li>
-                    <li style="--accent-color:#FBCA3E">
-                        <div class="date">SUVIDHA FOUNDATION</div>
-                        <div class="title" style="padding-top: 0;">Web Developer
-                            <div style="padding-top: 0; font-size: 14px;">7 June 2024 - 7 July 2024</div>
-                        </div>
-                        
-                        <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
-                    </li>
-                    <!-- <li style="--accent-color:#E24A68">
-                        <div class="date">2012</div>
-                        <div class="title">Title 3</div>
-                        <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
-                    </li>
-                    <li style="--accent-color:#1B5F8C">
-                        <div class="date">2017</div>
-                        <div class="title">Title 4</div>
-                        <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
-                    </li>
-                    <li style="--accent-color:#4CADAD">
-                        <div class="date">2022</div>
-                        <div class="title">Title 5</div>
-                        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </section><!-- end of education section -->
-
-
-
     <!-- education section -->
     <section class="section" id="education">
         <div class="container text-center">
@@ -150,8 +112,7 @@
             <div class="pricing-wrapper">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon2" src="assets/imgs/university.png"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon2" src="assets/imgs/university.png">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Mahindra University</h6>
@@ -165,8 +126,7 @@
                 
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon1" src="assets/imgs/college.png"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon1" src="assets/imgs/college.png" />
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Gowtham Junior College</h6>
@@ -194,6 +154,7 @@
             </div>
         </div>
     </section><!-- end of education section -->
+
 
     <!-- skills section -->
     <section class="section" id="skills">
@@ -259,13 +220,57 @@
         </div><!-- end of container -->
     </section> <!-- end of skills section -->
 
-    <section class="section" id="projects">
+    <section class="section" id="internships">
+        <div class="text-center">
+            <p class="section-subtitle">My Experience ..!!</p>
+            <h6 class="section-title mb-6">Internships</h6>
+            <div class="container1"> 
+                <ul class="timelines">
+                    <li style="--accent-color:#41516C">
+                        <div class="date">EDGEFORCE SOLUTION</div>
+                        <div class="title">Frontend Intern
+                            <div style="padding-top: 0; font-size: 14px;">26 June 2024 - Present</div>
+                        </div>
+                        <div class="descr">Currently an intern working on several projects in the frontend department of the organization. </div>
+                    </li>
+                    <li style="--accent-color:#FBCA3E">
+                        <div class="date">SUVIDHA FOUNDATION</div>
+                        <div class="title" style="padding-top: 0;">Web Developer
+                            <div style="padding-top: 0; font-size: 14px;">7 June 2024 - 7 July 2024</div>
+                        </div>
+                        
+                        <div class="descr">Made a clone of the official Suvidha Foundation website while interning as a web developer. 
+                            <br>
+                            <p> Click <a style="text-decoration: underline; font-weight: 700;" href="https://anjanashreya.github.io/Suvidha-Foundation/">here</a> for the link to the website</p>
+                        </div>
+                    </li>
+                    <!-- <li style="--accent-color:#E24A68">
+                        <div class="date">2012</div>
+                        <div class="title">Title 3</div>
+                        <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C">
+                        <div class="date">2017</div>
+                        <div class="title">Title 4</div>
+                        <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+                    </li>
+                    <li style="--accent-color:#4CADAD">
+                        <div class="date">2022</div>
+                        <div class="title">Title 5</div>
+                        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section><!-- end of internships section -->
+
+    <section class="section" id="projects" style="padding-top: 0;">
         <!-- container -->
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
             <h6 class="section-title mb-6">Projects</h6>
             <!-- blog-wrapper -->
-            <div class="blog-card">
+            <div class="blog-card animation">
                 <div class="blog-card-header">
                     <img src="assets/imgs/epals.png" class="blog-card-img">
                 </div>
@@ -279,7 +284,7 @@
                 </div>
             </div><!-- end of blog wrapper -->
             <!-- blog-wrapper -->
-            <div class="blog-card">
+            <div class="blog-card animation">
                 <div class="blog-card-header">
                     <img src="assets/imgs/project-1.png" class="blog-card-img">
                 </div>
@@ -294,7 +299,7 @@
                 </div>
             </div><!-- end of blog wrapper -->
             <!-- blog-wrapper -->
-            <div class="blog-card">
+            <div class="blog-card animation">
                 <div class="blog-card-header">
                     <img src="assets/imgs/iks.png" class="blog-card-img">
                 </div>
@@ -306,7 +311,7 @@
                     <p> Click <a style="text-decoration: underline; font-weight: 700;" href="https://anjanashreya.github.io/webpage-iks/">here</a> for the link to the website</p>
                 </div>
             </div><!-- end of blog wrapper -->
-            <div class="blog-card">
+            <div class="blog-card animation">
                 <div class="blog-card-header">
                     <img src="assets/imgs/4.png" class="blog-card-img">
                 </div>
