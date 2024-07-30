@@ -57,6 +57,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: rgba(30, 30, 30);
+  /* overflow: hidden; */
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -12289,6 +12290,16 @@ animation-delay: 0.15s;
   animation-delay: 0.4s;
 }
 
-.animate__fadeInRight {
+/* .animate__fadeInRight {
   animation-duration: 0.5s;
+} */
+
+.animate__animated {
+  opacity: 0; /* Start hidden */
+  transition: opacity 1s ease-in-out;
+}
+
+.animate__animated.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
