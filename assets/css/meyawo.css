@@ -12254,10 +12254,60 @@ pre .code {
 
 /* -----------------------------my css---------------------------------- */
 
-.certificate {
+/* .certificate {
   width: 350px;
   border: solid 2px lightgray;
+} */
+
+/* Flexbox styling for certificate images */
+.col-md-6 {
+  display: flex;
+  /* flex-wrap: wrap;  */
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
 }
+
+/* Ensure the certificates scale appropriately */
+.certificate {
+  max-width: 70%; /* Ensure images scale down with the viewport */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the area */
+  border: solid 2px lightgray;
+  position: relative;
+  left: 20%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .col-md-6 {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      align-items: center; /* Center images horizontally */
+      position: relative; /* Remove custom left positioning */
+      left: 0; /* Reset left position */
+  }
+
+  .certificate {
+      width: 100%; /* Adjust size on smaller screens */
+      margin-bottom: 20px; /* Space between stacked images */
+      position: relative;
+      /* left: 50%; */
+  }
+}
+
+@media (min-width: 769px) {
+  .col-md-6 {
+      flex-direction: row; /* Keep images in row on larger screens */
+      position: relative;
+  }
+
+  .certificate {
+      width: auto; /* Reset width to auto on larger screens */
+  }
+}
+
+
+
 
 /* .animation:hover {
   -webkit-transform: translateY(-5px);

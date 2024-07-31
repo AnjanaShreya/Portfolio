@@ -7,8 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 'fadeInLeft': 'animate__fadeInLeft',
                 'fadeInRight': 'animate__fadeInRight',
                 'ZoomInUp': 'animate_ZoomInUp',
-                'zoomInDown': 'animate__zoomInDown',
-                'ZoomInLeft': 'animate_ZoonInLeft'
+                'zoomInDown': 'animate__ZoomInDown',
+                'ZoomInLeft': 'animate_ZoomInLeft',
+                'rollIn': 'animate__rollIn',
+                'flip': 'animate__flip',
+                'slideInLeft': 'animate__slideInLeft',
+                'rotateIn': 'animate__rotateIn'
                 // Add more animation classes as needed
             };
     
