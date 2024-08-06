@@ -11191,7 +11191,7 @@ p {
   visibility: visible;
 }
 
-/*/ portfolio wrapper */
+/* portfolio wrapper */
 .portfolio-card {
   display: block;
   position: relative;
@@ -12352,4 +12352,79 @@ animation-delay: 0.15s;
 .animate__animated.visible {
   opacity: 1;
   transition: opacity 1s ease-in-out;
+}
+
+
+.project-card {
+  display: block;
+  position: relative;
+}
+
+.project-card .project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.3s;
+  border: 2px darkgray solid;
+}
+
+.project-card .project-card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+  transition: all 0.3s;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card .project-card-overlay {
+    transition: none;
+  }
+}
+
+.project-card .project-card-overlay .project-card-caption {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.project-card:hover .project-card-overlay {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 767.98px) {
+  .project-card {
+    margin-bottom: 30px;
+  }
+  .service-card {
+    margin-bottom: 30px;
+  }
+}
+
+.details {
+  padding-left: 135px;
+  padding-top: 25px;
+}
+
+@media (min-width: 576px) {
+  .details {
+    text-align: center;
+    justify-content: center;
+  }
 }
