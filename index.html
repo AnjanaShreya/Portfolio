@@ -54,10 +54,10 @@
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container">
+        <div class="header-content container" id="typing-style">
             <h1 class="header-title" style="text-align: start;">
                 <span class="up animate__animated animate__bounceInRight animate__fadeInRight">HI!</span>
-                <span class="down animate__animated animate__bounceInRight animate__fadeInLeft delay01">I am Anjana Shreya</span>
+                <span class="down animate__animated animate__bounceInRight animate__fadeInLeft delay01" id="ele">Ch S Anjana Shreya</span>
             </h1>
             <p class="header-subtitle animate__animated animate__bounceInRight animate__fadeInRight delay015">FULLSTACAK WEB DESIGNER</p>
             
@@ -261,40 +261,45 @@
         </div>
     </section><!-- end of internships section -->
 
-    <section class="section">
+    <section class="section" id="projects">
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
             <h6 class="section-title mb-6">Projects</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="project-card">
+                <div class="col-md-4" id="proj1">
+                    <a class="project-card">
                         <img src="assets/imgs/proj1.png" class="project-card-img">
                         <span class="project-card-overlay">
                             <span class="project-card-caption">
                                 <h4>EPALS</h4>
                                 <p class="font-weight-normal">
-                                    Employee monitering and management website
+                                    ReactJS, NodeJS, MongoDB
                                 </p>
+                                <p class="font-weight-bold" id="visit1">Click for Details</p>
                             </span>
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="project-card" >
+                
+                <div class="col-md-4" id="proj2">
+                    <a class="project-card" >
                         <img class="project-card-img" src="assets/imgs/proj2.png" class="img-responsive rounded">
                         <span class="project-card-overlay" >
                             <span class="project-card-caption">
                                 <h4>Personal Website Of A Professor</h4>
                                 <p class="font-weight-normal">
-                                    A website to showcase personall achievements, course structures and other details
+                                    <!-- A website to showcase personall achievements, course structures and other details -->
+                                    HTML, CSS, JavaScript
                                 </p>
+                                <p class="font-weight-bold" id="visit2">Click for Details</p>
                             </span>
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="project-card">
+                
+                <div class="col-md-4" id="proj3">
+                    <a class="project-card">
                         <img class="project-card-img" src="assets/imgs/proj3.png" class="img-responsive rounded">
                         <span class="project-card-overlay">
                             <span class="project-card-caption">
@@ -302,12 +307,15 @@
                                 <p class="font-weight-normal">
                                     All the information collected for IKS project can be organized here
                                 </p>
+
+                                <p class="font-weight-bold" id="visit3">Click for Details</p>
                             </span>
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4" style="padding-top: 30px;">
-                    <a href="#" class="project-card">
+                
+                <div class="col-md-4" style="padding-top: 30px;" id="proj4">
+                    <a class="project-card">
                         <img class="project-card-img" src="assets/imgs/proj4.png" class="img-responsive rounded">
                         <span class="project-card-overlay">
                             <span class="project-card-caption">
@@ -315,13 +323,43 @@
                                 <p class="font-weight-normal">
                                     Alzheimer's disease detection model using vgg16 model and CNN layers.
                                 </p>
+                                <p class="font-weight-bold" id="visit4">Click for Details</p>
                             </span>
                         </span>
                     </a>
                 </div>
+                
+                <div class="popup container text-center" id="epals">
+                    <button class="close-btn" id="close-btn-epals">x</button>
+                    <h6 class="section-title mb-6">EPALS</h6>
+                </div>
+                
+                <div class="popup container text-center" id="profwebsite">
+                    <button class="close-btn" id="close-btn-profwebsite">x</button>
+                    <h6 class="section-title mb-6">Personal Website For A Professor</h6>
+                </div>
+                
+                <div class="popup container text-center" id="organise">
+                    <button class="close-btn" id="close-btn-organise">x</button>
+                    <h6 class="section-title mb-6">Website For Organization Of Researched Information</h6>
+                </div>
+                
+                <div class="popup container text-center" id="DLproject">
+                    <button class="close-btn" id="close-btn-DLproject">x</button>
+                    <h6 class="section-title mb-6">Alzheimer's disease detection</h6>
+                </div>
+                
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section>
+
+    <!-- <section class="popup section">
+        <div class="popup container text-center" id="epals">
+            <button class="close-btn">x</button>
+            <h6 class="section-title mb-6">EPALS</h6>
+
+        </div>
+    </section> -->
 
     <!-- section -->
     <section class="section-sm bg-primary">
@@ -391,6 +429,9 @@
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
