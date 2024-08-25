@@ -166,11 +166,11 @@
                             <span class="portfolio-card-caption">
                                 <h4>Languages</h5>
                                     <p class="font-weight-normal">
-                                        C, Python<br>
+                                        C, Java ( Novice )<br>
                                         DBMS ( MySql , Oracle 19c )<br>
                                         NoSQL( MongoDB )<br>
                                         HTML, CSS , Javascript <br>
-                                        Java ( Novice ) <br>
+                                        ReactJS, NodeJS<br>
                                     </p>
                             </span>
                         </span>
@@ -188,7 +188,6 @@
                                         Canva <br>
                                         Microsoft Office ( Excel, Word Document,
                                         Power-point ) <br>
-                                        Figma ( Novice ) <br>
                                     </p>
                             </span>
                         </span>
@@ -215,7 +214,7 @@
         </div><!-- end of container -->
     </section> <!-- end of skills section -->
 
-    <section class="section" id="internships">
+    <section class="section animate__animated animate-on-scroll" id="internships" data-animation="fadeInUp" style="overflow: hidden;">
         <div class="text-center">
             <!-- <p class="section-subtitle">My Experience ..!!</p>
             <h6 class="section-title mb-6">Internships</h6> -->
@@ -223,14 +222,14 @@
                 <p class="section-subtitle">My Experience ..!!</p>
                 <h6 class="section-title mb-6">Internships</h6>
                 <ul class="timelines">
-                    <li style="--accent-color:#41516C">
+                    <li style="--accent-color:#41516C" class="animate__animated animate-on-scroll delay01" data-animation="fadeInUp" style="overflow: hidden;">
                         <div class="date">EDGEFORCE SOLUTION</div>
                         <div class="title">Frontend Intern
                             <div style="padding-top: 0; font-size: 14px;">26 June 2024 - Present</div>
                         </div>
                         <div class="descr">Currently an intern working on several projects in the frontend department of the organization. </div>
                     </li>
-                    <li style="--accent-color:#FBCA3E">
+                    <li style="--accent-color:#FBCA3E" class="animate__animated animate-on-scroll delay02" data-animation="fadeInUp" style="overflow: hidden;">
                         <div class="date">SUVIDHA FOUNDATION</div>
                         <div class="title" style="padding-top: 0;">Web Developer
                             <div style="padding-top: 0; font-size: 14px;">7 June 2024 - 7 July 2024</div>
@@ -274,7 +273,7 @@
                             <span class="project-card-caption">
                                 <h4>EPALS</h4>
                                 <p class="font-weight-normal">
-                                    ReactJS, NodeJS, MongoDB
+                                    <b>Technologies Used: </b>ReactJS, NodeJS, MongoDB
                                 </p>
                                 <p class="font-weight-bold" id="visit1">Click for Details</p>
                             </span>
@@ -290,7 +289,7 @@
                                 <h4>Personal Website Of A Professor</h4>
                                 <p class="font-weight-normal">
                                     <!-- A website to showcase personall achievements, course structures and other details -->
-                                    HTML, CSS, JavaScript
+                                    <b>Technologies Used: </b>HTML, CSS, JavaScript
                                 </p>
                                 <p class="font-weight-bold" id="visit2">Click for Details</p>
                             </span>
@@ -305,9 +304,9 @@
                             <span class="project-card-caption">
                                 <h4>Website For Organization Of Researched Information</h4>
                                 <p class="font-weight-normal">
-                                    All the information collected for IKS project can be organized here
+                                    <!-- All the information collected for IKS project can be organized here -->
+                                    <b>Technologies Used: </b>HTML, CSS, JavaScript
                                 </p>
-
                                 <p class="font-weight-bold" id="visit3">Click for Details</p>
                             </span>
                         </span>
@@ -321,7 +320,8 @@
                             <span class="project-card-caption">
                                 <h4>Alzheimer's disease detection</h4>
                                 <p class="font-weight-normal">
-                                    Alzheimer's disease detection model using vgg16 model and CNN layers.
+                                    <!-- Alzheimer's disease detection model using vgg16 model and CNN layers. -->
+                                     <b>Libraries Used: </b>CNN layes, Vgg16 model
                                 </p>
                                 <p class="font-weight-bold" id="visit4">Click for Details</p>
                             </span>
@@ -332,6 +332,24 @@
                 <div class="popup container text-center" id="epals">
                     <button class="close-btn" id="close-btn-epals">x</button>
                     <h6 class="section-title mb-6">EPALS</h6>
+                    <div class="popup-content">
+                        <img src="assets/imgs/epals.png" alt="EPALS Project" class="epals-project">
+                        <p class="popup-textcontent">
+                            <b>Description: </b>
+                            Presently working on a employee management and monitering website wich aims to streamline the management of employee tasks, attendance, and performance through a centralized platform. It facilitates efficient task allocation, ensures compliance with company policies, and enhances communication between managers and employees
+                        </p>
+                    </div>
+                    <p class="links"  style="margin-top: 30px;">
+                        <b>Technologies Used:</b> HTML, CSS, Javascript
+                    </p><br>
+                    <p class="links">
+                        <b>GitHub Repository Link: </b>
+                        <a href="https://github.com/AnjanaShreya/EPALS">https://github.com/AnjanaShreya/EPALS</a>
+                    </p><br>
+                    <p class="links">
+                        <b>Website Link: </b>
+                        <a href="https://epals-website.netlify.app/">https://epals-website.netlify.app/</a>
+                    </p>
                 </div>
                 
                 <div class="popup container text-center" id="profwebsite">
@@ -396,7 +414,7 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form id="contactForm" action="https://formspree.io/f/xnnalpyp" method="post" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" name="name" id="name" size="50" class="form-control" placeholder="Your Name" required>

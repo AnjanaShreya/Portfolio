@@ -58,15 +58,27 @@ let proj4 = document.getElementById('proj4');
 
 proj1.addEventListener('click', function() {
     epals.style.display = 'block';
+    profwebsite.style.display = 'none';
+    organise.style.display = 'none';
+    DLproject.style.display = 'none';
 });
 proj2.addEventListener('click', function() {
     profwebsite.style.display = 'block';
+    organise.style.display = 'none';
+    DLproject.style.display = 'none';
+    epals.style.display = 'none';
 });
 proj3.addEventListener('click', function() {
     organise.style.display = 'block';
+    DLproject.style.display = 'none';
+    epals.style.display = 'none';
+    profwebsite.style.display = 'none';
 });
 proj4.addEventListener('click', function() {
     DLproject.style.display = 'block';
+    epals.style.display = 'none';
+    profwebsite.style.display = 'none';
+    organise.style.display = 'none';
 });
 
 // Close buttons event listeners
