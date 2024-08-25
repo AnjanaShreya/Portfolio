@@ -11365,6 +11365,7 @@ p {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 1000px;
   }
   .pricing-card {
     border-radius: 0 !important;
@@ -12256,12 +12257,6 @@ pre .code {
 
 /* -----------------------------my css---------------------------------- */
 
-/* .certificate {
-  width: 350px;
-  border: solid 2px lightgray;
-} */
-
-/* Flexbox styling for certificate images */
 .col-md-6 {
   display: flex;
   /* flex-wrap: wrap;  */
@@ -12272,44 +12267,42 @@ pre .code {
 
 /* Ensure the certificates scale appropriately */
 .certificate {
-  max-width: 70%; /* Ensure images scale down with the viewport */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images cover the area */
-  border: solid 2px lightgray;
-  position: relative;
+  max-width: 60%; 
+  height: auto; 
+  object-fit: cover; 
   left: 20%;
+}
+
+.certificate > img {
+  border: lightgrey 2px solid;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .col-md-6 {
-      flex-direction: column; /* Stack images vertically on smaller screens */
-      align-items: center; /* Center images horizontally */
-      position: relative; /* Remove custom left positioning */
-      left: 0; /* Reset left position */
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+    left: 0; 
   }
 
   .certificate {
-      width: 100%; /* Adjust size on smaller screens */
-      margin-bottom: 20px; /* Space between stacked images */
-      position: relative;
-      /* left: 50%; */
+    width: 100%; 
+    margin-bottom: 20px; 
+    position: relative;
   }
 }
 
 @media (min-width: 769px) {
   .col-md-6 {
-      flex-direction: row; /* Keep images in row on larger screens */
-      position: relative;
+    flex-direction: row; /* Keep images in row on larger screens */
+    position: relative;
   }
 
   .certificate {
-      width: auto; /* Reset width to auto on larger screens */
+    width: auto; /* Reset width to auto on larger screens */
   }
 }
-
-
-
 
 /* .animation:hover {
   -webkit-transform: translateY(-5px);
