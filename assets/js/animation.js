@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
         'rollIn': 'animate__rollIn',
         'flip': 'animate__flip',
         'slideInLeft': 'animate__slideInLeft',
-        'rotateIn': 'animate__rotateIn'
+        'rotateIn': 'animate__rotateIn',
+        'backInDown': 'animate__backInDown',
+        'bounceInDown': 'animate__bounceInDown',
+        'rotateIn': 'animate__rotateIn',
+        'fadeIn': 'animate__fadeIn',
         // Add more animation classes as needed
     };
 
