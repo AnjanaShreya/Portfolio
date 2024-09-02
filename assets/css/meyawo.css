@@ -12481,10 +12481,16 @@ animation-delay: 0.15s;
   /* border: #000 2px solid; */
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .links > a {
   color: var(--purple)
+}
+
+.links > b {
+  font-weight: 700;
 }
 
 @media (max-width: 767.98px) {
