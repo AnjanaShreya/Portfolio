@@ -12277,6 +12277,13 @@ pre .code {
   border: lightgrey 2px solid;
 }
 
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr)); 
+  gap: 40px; 
+  justify-items: center; 
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .col-md-6 {
